@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  color: #f5d742;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card */
+.profile-card {
+  position: relative;
+  background-color: #1a1a1a;
+  color: #f5d742;
+  border-radius: 12px;
+  padding: 2rem 1.5rem 4rem;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #f5d742;
+  object-fit: cover;
+  margin-bottom: 0.6rem;
+}
+
+
+.profile-info {
+  text-align: center;
+}
+
+
+.profile-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffd43b;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #e5e5e5;
+  margin-top: 0.9rem;
+}
+
+/* Body */
+.profile-body {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+  margin-top: 0.7rem;
+}
+
+.profile-bio {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-bottom: 1.25rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #ffd43b;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+/* Button */
+.contact-btn {
+  position: absolute;
+  bottom: 1rem;      
+  left: 50%;           
+  transform: translateX(-50%); 
+  background-color: #f5d742;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #fff176;
+  box-shadow: 0 0px 7px rgba(255, 255, 255, 0.3);
+}
+
+
+@media (max-width: 600px) {
+  .contact-btn {
+    bottom: 1.2rem;
+    right: 1rem;
+  }
+
+  .profile-card {
+    width: 90%;
+    padding: 1.5rem 1rem 4.5rem;
+  }
+
+  .profile-bio {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-image {
+    margin-bottom: 0.8rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+

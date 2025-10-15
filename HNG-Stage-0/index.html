@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="profile-container" data-test-id="profile-container">
+    <article class="profile-card" data-test-id="profile-card" aria-label="Profile Card">
+      <div class="profile-header" data-test-id="profile-header">
+        <img
+          src="imgs/WhatsApp Image 2025-10-13 at 13.35.17_88382ef8.jpg"
+          alt="Profile picture"
+          class="profile-image"
+          data-test-id="profile-image"
+        />
+        <div class="profile-info" data-test-id="profile-info">
+          <h1 class="profile-name" data-test-id="profile-name">Edidiong Ekaette</h1>
+          <h2 class="profile-title" data-test-id="profile-title">Frontend Developer</h2>
+        </div>
+      </div>
+
+      <div class="profile-body" data-test-id="profile-body">
+        <p class="profile-bio" data-test-id="profile-bio">
+          Passionate about building accessible, responsive, and delightful
+          user interfaces. Love transforming ideas into reality through code.
+        </p>
+
+        <ul class="social-links" data-test-id="social-links" aria-label="Social Links">
+          <li><a href="https://x.com/edida_young?s=09" target="_blank" data-test-id="social-link-twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/edidiong-ekaette" target="_blank" data-test-id="social-link-linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/edidayoung" target="_blank"  data-test-id="social-link-github" aria-label="GitHub"><i class="fa-brands fa-github"></i> GitHub</a></li>
+        </ul>
+
+        <button class="contact-btn" data-test-id="contact-btn">Task Complete?</button>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
