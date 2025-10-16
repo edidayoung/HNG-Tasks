@@ -154,7 +154,7 @@ body {
 /* For Small Screens */
 @media (max-width: 600px) {
   .profile-card {
-    margin: 0;
+    margin-left: 10px;
     width: 92%;
     padding: 1.2rem 1rem 4.2rem;
     max-height: none;   
