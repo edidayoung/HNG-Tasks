@@ -16,7 +16,7 @@ The layout is fully responsive and adjusts smoothly for **mobile, tablet, and de
 
 ## 💻 GitHub Repository
 📁 **Project Repository:**  
-👉 [https://github.com/edidayoung/HNG-Tasks](https://github.com/edidayoung/HNG-Tasks)
+👉 [GitHub Repo](https://github.com/edidayoung/HNG-Tasks)
 
 ------
 
