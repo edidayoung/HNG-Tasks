@@ -34,6 +34,7 @@ Follow these steps to test the project on your local system:
 3. **Open the Project**
    Simply open the [`index.html`](https://github.com/edidayoung/HNG-Tasks/tree/main/HNG-Stage-0) file in your preferred web browser.
 
+------ 
 
 ## ✅ Acceptance Criteria (Checklist)
 **The poject succesfully checks that:**
@@ -41,14 +42,16 @@ Follow these steps to test the project on your local system:
 - All requirements for grading and automated testing have been met.
 - All required elements exist and are discoverable by their given `data-testids`.
 - HTML structure uses semantic tags (`article`, `figure`, `nav`, `section`, `headings`).
-- The `test-user-time` value equals `Date.now()` (in milliseconds, with acceptable delta).
+- The `test-user-time` value equals Date.now() (in milliseconds, with acceptable delta).
 - Avatar includes an `alt` attribute and `data-testid="test-user-avatar"`.
 - Social links are located inside `test-user-social-links` and are individually testable (e.g., `test-user-social-twitter`).
-- Hobbies and dislikes are displayed as distinct lists, each with their own data test IDs `test-user-hobbies` and `test-user-dislikes`
+- Hobbies and dislikes are displayed as distinct lists, each with their own data test IDs `test-user-hobbies` and `test-user-dislikes`.
 - All links and buttons are keyboard accessible; **focus styles** are visible during navigation.
 - Layout is fully responsive across typical breakpoints i.e mobile, tablet, and desktop.
 - The “Check Time” button dynamically updates the current time in milliseconds.
 - Profile card smoothly expands to fit additional content and resizes properly on smaller screens.
+
+------
 
 ## 🧪 Tests/Notes
 
@@ -58,6 +61,8 @@ Follow these steps to test the project on your local system:
 - Card layout tested for responsiveness at common screen widths: 320px, 768px, 1024px, 1440px.
 - Keyboard focus indicators visible on all interactive elements.
 
+------
+
 ## 🧰 Technologies Used
 **Below are the technologies utilized:**
 
@@ -66,11 +71,15 @@ Follow these steps to test the project on your local system:
 - JavaScript (ES6): Dynamic time updates and interactivity.
 - GitHub Pages: Hosting and deployment.
 
+------
+
 ## 👨‍💻 Author
 
 **⚡Name:** Edidiong E. Ekaette
 **🌍 GitHub:** @edidayoung
 **📩 Email:** ekaetteedidiong0@gmail.com
+
+------
 
 ## 🙏 Thank You
 
