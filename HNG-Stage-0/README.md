@@ -73,9 +73,9 @@ Follow these steps to test the project on your local system:
 
 ## 👨‍💻 Author
 
-**⚡Name:** Edidiong E. Ekaette
-**🌍 GitHub:** @edidayoung
-**📩 Email:** ekaetteedidiong0@gmail.com
+**⚡Name:** Edidiong E. Ekaette  
+**🌍 GitHub:** @edidayoung  
+**📩 Email:** ekaetteedidiong0@gmail.com  
 
 ------
 
