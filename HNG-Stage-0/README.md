@@ -30,7 +30,7 @@ Follow these steps to test the project on your local system:
    `cd HNG-Tasks/HNG-Stage-0`
 
 3. **Open the Project**  
-   Simply open the [`index.html`](https://github.com/edidayoung/HNG-Tasks/tree/main/HNG-Stage-0) file in your preferred web browser.
+   Simply open the [`index.html`](https://edidayoung.github.io/HNG-Tasks/HNG-Stage-0/index.html) file in your preferred web browser.
 
 ------ 
 
