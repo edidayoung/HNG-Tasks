@@ -1,7 +1,16 @@
+//Display current time in milliseconds
 document.addEventListener("DOMContentLoaded", () => {
-  const contactBtn = document.querySelector("[data-test-id='contact-btn']");
-  
-  contactBtn.addEventListener("click", () => {
-    alert("Yes! Stage 0 Task Complete😊 !");
-  });
+  const timeDisplay = document.querySelector('[data-testid="test-user-time"]');
+  const timeButton = document.querySelector('[data-testid="time-btn"]');
+
+  const updateTime = () => {
+    const currentTime = Date.now();
+    timeDisplay.innerHTML = `<span class="time-label">Time:</span> ${currentTime}`;
+  };
+
+  // Initialize immediately
+  updateTime();
+
+  // Update on button click
+  timeButton.addEventListener("click", updateTime);
 });
