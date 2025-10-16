@@ -23,15 +23,13 @@ The layout is fully responsive and adjusts smoothly for **mobile, tablet, and de
 ## ⚙️ How to Run Locally
 Follow these steps to test the project on your local system:
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/edidayoung/HNG-Tasks.git
+1. **Clone the repository**  
+   `git clone https://github.com/edidayoung/HNG-Tasks.git`
 
-2. **Navigate to the project directory/folder**
-  ```bash
-   cd HNG-Tasks/HNG-Stage-0
+2. **Navigate to the project directory**  
+   `cd HNG-Tasks/HNG-Stage-0`
 
-3. **Open the Project**
+3. **Open the Project**  
    Simply open the [`index.html`](https://github.com/edidayoung/HNG-Tasks/tree/main/HNG-Stage-0) file in your preferred web browser.
 
 ------ 
@@ -42,7 +40,7 @@ Follow these steps to test the project on your local system:
 - All requirements for grading and automated testing have been met.
 - All required elements exist and are discoverable by their given `data-testids`.
 - HTML structure uses semantic tags (`article`, `figure`, `nav`, `section`, `headings`).
-- The `test-user-time` value equals Date.now() (in milliseconds, with acceptable delta).
+- The `test-user-time` value equals `Date.now()` (in milliseconds, with acceptable delta).
 - Avatar includes an `alt` attribute and `data-testid="test-user-avatar"`.
 - Social links are located inside `test-user-social-links` and are individually testable (e.g., `test-user-social-twitter`).
 - Hobbies and dislikes are displayed as distinct lists, each with their own data test IDs `test-user-hobbies` and `test-user-dislikes`.
