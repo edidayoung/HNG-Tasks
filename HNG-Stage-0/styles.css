@@ -13,7 +13,7 @@ body {
   align-items: center;
   background-color: #0d0d0d;
   color: #f5d742;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, sans-serif;
   overflow: hidden;
 }
 
@@ -157,7 +157,7 @@ body {
   .body {
     align-items: center;
     justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, sans-serif;
   }
 
   .profile-card {
