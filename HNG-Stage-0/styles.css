@@ -13,7 +13,7 @@ body {
   align-items: center;
   background-color: #0d0d0d;
   color: #f5d742;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
 }
 
@@ -153,30 +153,13 @@ body {
 
 /* For Small Screens */
 @media (max-width: 600px) {
-  .profile-card {
-    margin: 0 auto;
-    width: 92%;
-    padding: 1.2rem 1rem 4.2rem;
-    max-height: none;   
-    height: auto;          
-    overflow-y: visible;   
-  }
-  .profile-image {
-    width: 80px;
-    height: 80px;
-  }
-  .profile-name {
-    font-size: 1.2rem;
-  }
-  .profile-title {
-    font-size: 0.85rem;
-  }
-  .time-btn {
-    bottom: 0.6rem;
-  }
-}
 
-@media (max-width: 380px) {
+  .body {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
   .profile-card {
     margin: 0 auto;
     width: 92%;
