@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <article class="profile-card" data-testid="test-profile-card" aria-label="User Profile Card">
+      
+      <!-- Header -->
+      <header class="profile-header">
+        <figure>
+          <img
+            src="imgs/WhatsApp Image 2025-10-13 at 13.35.17_88382ef8.jpg"
+            alt="Profile picture of Edidiong Ekaette"
+            class="profile-image"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <h2 class="profile-name" data-testid="test-user-name">Edidiong E. Ekaette</h2>
+        <p class="profile-title">Frontend Developer | Email Specialist</p>
+      </header>
+
+      <!-- Current Time (in milliseconds) -->
+      <p class="profile-time" data-testid="test-user-time" aria-label="Current Time in milliseconds"></p>
+
+      <!-- Bio -->
+      <section class="profile-bio-section">
+        <p class="profile-bio" data-testid="test-user-bio">
+          Passionate about building accessible, responsive, and delightful
+          user interfaces. Love transforming ideas into reality through code.
+        </p>
+      </section>
+
+      <!-- Social Links -->
+      <nav aria-label="Social Links">
+        <ul class="social-links" data-testid="test-user-social-links">
+          <li><a href="https://x.com/edida_young?s=09" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/edidiong-ekaette" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/edidayoung" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github"><i class="fa-brands fa-github"></i> GitHub</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hobbies -->
+      <section class="profile-hobbies">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Gaming</li>
+          <li>Self-improvement</li>
+        </ul>
+      </section>
+
+      <!-- Dislikes -->
+      <section class="profile-dislikes">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Lack of Progress</li>
+          <li>Conflicts</li>
+          <li>Complex SetUps</li>
+        </ul>
+      </section>
+
+      <!-- Times -->
+      <button class="time-btn" data-testid="time-btn">Check Time</button>
+
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* Simple Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Style */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  color: #f5d742;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Overal Card Body */
+.profile-card {
+  position: relative;
+  background-color: #1a1a1a;
+  color: #f5d742;
+  border-radius: 12px;
+  padding: 1.5rem 1rem 4rem;
+  max-width: 380px;
+  width: 90%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(245, 215, 66, 0.3);
+}
+
+
+/* Header Section */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+.profile-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #f5d742;
+  object-fit: cover;
+}
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffd43b;
+}
+.profile-title {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+/* Time Display */
+.profile-time {
+  margin: 0.8rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* Bio */
+.profile-bio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  list-style: none;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.social-links a {
+  color: #ffd43b;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+.social-links a:hover {
+  color: #ffffff;
+  outline: none;
+}
+
+/* Hobbies & Dislikes */
+.profile-hobbies,
+.profile-dislikes {
+  margin-bottom: 1rem;
+}
+.profile-hobbies h3,
+.profile-dislikes h3 {
+  text-align: center;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: #fff;
+}
+.profile-hobbies ul,
+.profile-dislikes ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.profile-hobbies li,
+.profile-dislikes li {
+  background-color: #2a2a2a;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #f5d742;
+}
+
+/* Time Button */
+.time-btn {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5d742;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.time-btn:hover {
+  background-color: #fff176;
+  box-shadow: 0 0px 7px rgba(255, 255, 255, 0.3);
+}
+
+.time-label {
+  color: #f5d742;
+  font-weight: bold;
+}
+
+/* For Small Screens */
+@media (max-width: 600px) {
+
+  .body {
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+  }
+
+  .profile-card {
+    margin: 0 auto;
+    width: 92%;
+    padding: 1.2rem 1rem 4.2rem;
+    max-height: none;   
+    height: auto;          
+    overflow-y: visible;   
+  }
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+  .profile-name {
+    font-size: 1.2rem;
+  }
+  .profile-title {
+    font-size: 0.85rem;
+  }
+  .time-btn {
+    bottom: 0.6rem;
+  }
+}
+
