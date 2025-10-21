@@ -1,16 +1,26 @@
-# 🌟 HNG Stage 0 Task README
+# 🌟 HNG Stage 1 Task README
 
 ## 🧾 Short Project Description
-This is my HNG Stage 0 Task, a simple, elegant profile card built using **HTML, CSS, and JavaScript**.  
-It displays my basic information such as **name, avatar, bio, social links, hobbies, and dislikes**, while also dynamically showing the **current time in milliseconds** and updates it when the user clicks **“Check Time”** button.  
+This is my HNG Stage 1 Task, a professional 3-page webapp built using **HTML, CSS, and JavaScript**.
 
-The layout is fully responsive and adjusts smoothly for **mobile, tablet, and desktop** screens.
+The project expands on **Stage 0** with two additional pages: **About Me and Contact Us**, featuring form validation, semantic HTML structure, and enhanced accessibility.  
+
+------
+
+## 📄 Pages Included:
+- **Profile** - Interactive profile with real-time time display in milliseconds.
+
+- **About Me** - Reflective sections about my journey, goals, and growth areas.
+
+- **Contact Us** - Fully validated contact form with accessibility features.
+
+The layout is fully responsive and optimized for **mobile, tablet, and desktop** screens.
 
 ------
 
 ## 🌐 Live Demo
 🔗 **View the hosted project:**  
-👉 [Profile card: Live Demo](https://edidayoung.github.io/HNG-Tasks/HNG-Stage-0/index.html)
+👉 [Multi-Page WebApp: Live Demo](https://edidayoung.github.io/HNG-Tasks/HNG-Stage-1/markups/index.html)
 
 ------
 
@@ -27,49 +37,88 @@ Follow these steps to test the project on your local system:
    `git clone https://github.com/edidayoung/HNG-Tasks.git`
 
 2. **Navigate to the project directory**  
-   `cd HNG-Tasks/HNG-Stage-0`
+   `cd HNG-Tasks/HNG-Stage-1`
 
 3. **Open the Project**  
-   Simply open the [`index.html`](https://edidayoung.github.io/HNG-Tasks/HNG-Stage-0/index.html) file in your preferred web browser.
+   Simply open the `\markups` folder, then the, [`\index.html`](https://edidayoung.github.io/HNG-Tasks/HNG-Stage-1/markups/index.html) file in your preferred web browser.
 
 ------ 
 
-## ✅ Acceptance Criteria (Checklist)
-**The poject succesfully checks that:**
+## 📁 Project Structure
 
-- All requirements for grading and automated testing have been met.
-- All required elements exist and are discoverable by their given `data-testids`.
-- HTML structure uses semantic tags (`article`, `figure`, `nav`, `section`, `headings`).
-- The `test-user-time` value equals `Date.now()` (in milliseconds, with acceptable delta).
-- Avatar includes an `alt` attribute and `data-testid="test-user-avatar"`.
-- Social links are located inside `test-user-social-links` and are individually testable (e.g., `test-user-social-twitter`).
-- Hobbies and dislikes are displayed as distinct lists, each with their own data test IDs `test-user-hobbies` and `test-user-dislikes`.
-- All links and buttons are keyboard accessible; **focus styles** are visible during navigation.
-- Layout is fully responsive across typical breakpoints i.e mobile, tablet, and desktop.
-- The “Check Time” button dynamically updates the current time in milliseconds.
-- Profile card smoothly expands to fit additional content and resizes properly on smaller screens.
+```
+   HNG-Stage-1/
+   ├── markups/
+   |   ├── index.html      # Profile Card Page
+   |   ├── about.html      # About Me Page
+   |   └── contact.html    # Contact Us Page
+   ├── styles/
+   │   ├── styles.css      # Shared styles & navigation
+   │   ├── about.css       # About page specific styles
+   │   └── contact.css     # Contact page specific styles
+   ├── scripts/
+   │   ├── script.js       # Profile card functionality
+   │   ├── about.js        # About page interactions
+   │   └── contact.js      # Contact form validation
+   └── imgs/
+      └── profile_image.jpg
+```      
+
+------
+
+## 🔧 General Requirements
+
+- ✅ Semantic HTML throughout all pages
+- ✅ Accessibility (labels, alt text, ARIA attributes)
+- ✅ Fully Responsive across all device sizes
+- ✅ Keyboard Navigable with visible focus indicators
+- ✅ Modular, Readable Code with consistent structure
 
 ------
 
-## 🧪 Tests/Notes
+## 🧪 Tests / Implementations
+### ⚡ JavaScript Features
 
-- JavaScript’s `Date.now()` is used to fetch the current timestamp dynamically.
-- Verified across Chrome, Firefox, and Edge browsers.
-- Time updates correctly on every click and stays within ±100ms of system time.
-- Card layout tested for responsiveness at common screen widths: 320px, 768px, 1024px, 1440px.
-- Keyboard focus indicators visible on all interactive elements.
+- **Profile Card:** Continuous time updates using `setInterval()`
+- **Contact Form:** Real-time validation with custom error handling
+- **About Page:** Smooth scroll animations with Intersection Observer
+
+## 🎨 CSS Features
+
+- **Responsive Design:** Mobile-first approach with media queries
+- **Color Scheme:** Consistent dark theme with gold accents (#f5d742)
+- **Typography:** Nunito font family for modern readability
+- **Animations:** Subtle hover effects and transitions
+
+## ♿ Accessibility Features
+- Semantic HTML structure
+- Proper ARIA labels and descriptions
+- Keyboard navigation support
+- Focus management
+- Color contrast compliance
 
 ------
+
 
 ## 🧰 Technologies Used
 **Below are the technologies utilized:**
 
-- HTML5: Semantic structure.
-- CSS3 (Flexbox, Media Queries): Responsive styling and animations.
-- JavaScript (ES6): Dynamic time updates and interactivity.
-- GitHub Pages: Hosting and deployment.
+- **HTML5:** Semantic structure.
+- **CSS3 (Flexbox, Media Queries):** Responsive styling and animations.
+- **JavaScript (ES6):** Dynamic time updates and interactivity.
+- **GitHub Pages:** Hosting and deployment.  
+- **Font Awesome:** Icons for enhanced UI.   
+- **Google Fonts:** Nunito typography.  
+- **GitHub Pages:** Hosting and deployment.  
 
 ------
+
+## 🚀 Deployment
+
+The project is automatically deployed via `GitHub Pages` from the `main branch`. Any changes pushed to the repository will trigger a rebuild and deployment.
+
+------
+
 
 ## 👨‍💻 Author
 
@@ -79,9 +128,12 @@ Follow these steps to test the project on your local system:
 
 ------
 
-## 🙏 Thank You
+## 🙏 Acknowledgments
 
-Thank you for checking out this project! 😊
-Special appreciation to the [HNG Internship Team](https://hng.tech/internship) for providing this learning opportunity.
-If you liked this project, feel free to ⭐ the repo or connect with me on [LinkedIn](https://www.linkedin.com/in/edidiong-ekaette)
- — I’d love to hear from you!
+Special thanks to the [HNG Internship Team](https://hng.tech/internship) Team for this incredible learning opportunity and for pushing us to build professional, accessible web applications.
+
+Thank you for checking out my Stage 1 project! If you found this interesting, feel free to ⭐ the repository or connect with me on [LinkedIn](https://www.linkedin.com/in/edidiong-ekaette) — I'd love to hear your feedback! 😊
+
+------
+
+*Built with ❤️ as part of the HNG Internship Program.*
