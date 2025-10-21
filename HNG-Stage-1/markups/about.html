@@ -11,90 +11,172 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/about.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="main-nav" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Edidayoung</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Profile</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main data-testid="test-about-page">
-    <div class="container">
-      <header class="page-header">
+    <div class="about-container">
+      <header class="about-header">
         <h1>About Me</h1>
-        <p>My journey, goals, and reflections</p>
+        <p class="about-subtitle">My journey, goals, and reflections in tech</p>
       </header>
 
-      <section class="about-section">
-        <h2>My Story</h2>
-        <p data-testid="test-about-bio">
-          I'm a passionate frontend developer with a strong focus on creating accessible, 
-          responsive, and delightful user interfaces. My journey in web development began 
-          during my university years, and since then I've been constantly learning and 
-          evolving with the ever-changing landscape of frontend technologies. I believe 
-          that great code should not only function well but also be maintainable, scalable, 
-          and enjoyable to work with.
-        </p>
-      </section>
+      <div class="about-content">
+        <!-- Bio Section -->
+        <section class="about-card">
+          <div class="card-header">
+            <i class="fas fa-user"></i>
+            <h2>My Story</h2>
+          </div>
+          <div class="card-content" data-testid="test-about-bio">
+            <p>
+              I'm a passionate frontend developer with a strong focus on creating accessible, 
+              responsive, and delightful user interfaces. My journey in web development began 
+              during my college years where i studies and graduated with an Advanced Diploma in Software at Aptech computer Education, and since then I've been constantly learning and 
+              evolving with the ever-changing landscape of frontend technologies.
+            </p>
+            <p>
+              I believe that great code should not only function well but also be maintainable, 
+              scalable, and enjoyable to work with. Every project is an opportunity to create 
+              something meaningful and make the web a better place.
+            </p>
+          </div>
+        </section>
 
-      <section class="about-section">
-        <h2>Goals in This Program</h2>
-        <p data-testid="test-about-goals">
-          My primary goal in the HNG internship is to deepen my understanding of modern 
-          frontend development practices and collaborate with like-minded developers. 
-          Specifically, I aim to:
-        </p>
-        <ul>
-          <li>Master advanced React patterns and state management techniques</li>
-          <li>Improve my testing skills with React Testing Library and Jest</li>
-          <li>Enhance my knowledge of performance optimization strategies</li>
-          <li>Build meaningful connections within the developer community</li>
-          <li>Contribute to real-world projects that solve actual problems</li>
-        </ul>
-      </section>
+        <!-- Goals Section -->
+        <section class="about-card">
+          <div class="card-header">
+            <i class="fas fa-bullseye"></i>
+            <h2>Goals in This Program</h2>
+          </div>
+          <div class="card-content" data-testid="test-about-goals">
+            <p>My primary goal in the HNG internship is to deepen my understanding of modern 
+            frontend development practices and collaborate with like-minded developers.</p>
+            
+            <div class="goals-grid">
+              <div class="goal-item">
+                <i class="fas fa-layer-group"></i>
+                <h3>Advanced React</h3>
+                <p>Master React patterns and state management</p>
+              </div>
+              <div class="goal-item">
+                <i class="fas fa-vial"></i>
+                <h3>Testing Skills</h3>
+                <p>Excel with React Testing Library and Jest</p>
+              </div>
+              <div class="goal-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Performance</h3>
+                <p>Learn advanced optimization techniques</p>
+              </div>
+              <div class="goal-item">
+                <i class="fas fa-users"></i>
+                <h3>Community</h3>
+                <p>Build meaningful developer connections</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <section class="about-section">
-        <h2>Areas of Low Confidence</h2>
-        <p data-testid="test-about-confidence">
-          While I'm comfortable with core frontend technologies, I recognize areas where 
-          I need to grow:
-        </p>
-        <ul>
-          <li>Advanced TypeScript patterns and generics</li>
-          <li>Complex state management in large-scale applications</li>
-          <li>Advanced accessibility patterns beyond basic ARIA attributes</li>
-          <li>Performance optimization for very large datasets</li>
-          <li>Backend integration patterns and best practices</li>
-        </ul>
-      </section>
+        <!-- Growth Areas -->
+        <section class="about-card">
+          <div class="card-header">
+            <i class="fas fa-seedling"></i>
+            <h2>Areas for Growth</h2>
+          </div>
+          <div class="card-content" data-testid="test-about-confidence">
+            <p>While I'm comfortable with core frontend technologies, I'm actively working to improve in these areas:</p>
+            
+            <div class="skills-list">
+              <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <ul>
+                  <li>Advanced TypeScript patterns</li>
+                  <li>Complex state management</li>
+                  <li>Performance optimization</li>
+                </ul>
+              </div>
+              <!-- <div class="skill-category">
+                <h3><i class="fas fa-universal-access"></i> Accessibility</h3>
+                <ul>
+                  <li>Advanced ARIA patterns</li>
+                  <li>Screen reader optimization</li>
+                  <li>Mobile accessibility</li>
+                </ul>
+              </div> -->
+              <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend Integration</h3>
+                <ul>
+                  <li>API design patterns</li>
+                  <li>Authentication strategies</li>
+                  <li>Real-time applications</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <section class="about-section">
-        <h2>Note to Future Self</h2>
-        <p data-testid="test-about-future-note">
-          Remember why you started this journey - the excitement of seeing your code come 
-          to life and make a difference. Stay curious, keep learning, and don't be afraid 
-          to ask for help. The tech community is incredibly supportive, and growth happens 
-          when you step outside your comfort zone. Maintain your passion for creating 
-          beautiful, accessible experiences that users love.
-        </p>
-      </section>
+        <!-- Future Note -->
+        <section class="about-card future-note">
+          <div class="card-header">
+            <i class="fas fa-time-capsule"></i>
+            <h2>Note to Future Self</h2>
+          </div>
+          <div class="card-content" data-testid="test-about-future-note">
+            <blockquote>
+              "Hey Edidayoung, Just hearing that name and with that little smile on your face says it all... you made it Bro. You really did.
+              All the tough days, all the moments you almost gave up, even when you felt lost, like you didn't know what you where doing… they brought you here. Look at you now, happy, calmer, and finally at peace with how far you've come.
+              You didn't rush it, you just kept moving. And now, it's your time."
+            </blockquote>
+          </div>
+        </section>
 
-      <section class="about-section">
-        <h2>Extra Thoughts</h2>
-        <p data-testid="test-about-extra">
-          I'm particularly excited about the future of web development with emerging 
-          technologies like WebAssembly, Progressive Web Apps, and the continued evolution 
-          of CSS. The balance between performance, user experience, and developer experience 
-          continues to fascinate me. I believe that as developers, we have a responsibility 
-          to build inclusive, sustainable, and ethical digital products that serve all users 
-          regardless of their abilities or circumstances.
-        </p>
-      </section>
+        <!-- Extra Thoughts -->
+        <section class="about-card">
+          <div class="card-header">
+            <i class="fas fa-lightbulb"></i>
+            <h2>Beyond Code</h2>
+          </div>
+          <div class="card-content" data-testid="test-about-extra">
+            <p>
+              I'm particularly excited about the future of web development with emerging 
+              technologies like WebAssembly, Progressive Web Apps, and the continued evolution 
+              of CSS. The balance between performance, user experience, and developer experience 
+              continues to fascinate me.
+            </p>
+            <p>
+              I believe that as developers, we have a responsibility to build inclusive, 
+              sustainable, and ethical digital products that serve all users regardless of 
+              their abilities or circumstances.
+            </p>
+          </div>
+        </section>
+      </div>
 
       <nav class="page-navigation">
-        <a href="index.html" class="nav-link">Back to Profile</a>
-        <a href="contact.html" class="nav-link">Contact Me</a>
+        <a href="index.html" class="nav-btn">
+          <i class="fas fa-arrow-left"></i> Back to Profile
+        </a>
+        <a href="contact.html" class="nav-btn primary">
+          Get in Touch <i class="fas fa-arrow-right"></i>
+        </a>
       </nav>
     </div>
   </main>
 
-  <script src="about.js"></script>
+  <script src="../scripts/about.js"></script>
 </body>
 </html>

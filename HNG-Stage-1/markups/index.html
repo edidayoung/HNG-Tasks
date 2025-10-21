@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile Card</title>
+  <title>Edidiong Ekaette - Profile</title>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -11,9 +11,21 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="main-nav" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Edidayoung</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Profile</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main>
     <article class="profile-card" data-testid="test-profile-card" aria-label="User Profile Card">
       
@@ -21,7 +33,7 @@
       <header class="profile-header">
         <figure>
           <img
-            src="imgs/WhatsApp Image 2025-10-13 at 13.35.17_88382ef8.jpg"
+            src="../imgs/WhatsApp Image 2025-10-13 at 13.35.17_88382ef8.jpg"
             alt="Profile picture of Edidiong Ekaette"
             class="profile-image"
             data-testid="test-user-avatar"
@@ -32,7 +44,10 @@
       </header>
 
       <!-- Current Time (in milliseconds) -->
-      <p class="profile-time" data-testid="test-user-time" aria-label="Current Time in milliseconds"></p>
+      <div class="profile-time-container">
+        <p class="profile-time" data-testid="test-user-time" aria-label="Current Time in milliseconds"></p>
+        <small class="time-note">Real-Time Update</small>
+      </div>
 
       <!-- Bio -->
       <section class="profile-bio-section">
@@ -51,32 +66,44 @@
         </ul>
       </nav>
 
-      <!-- Hobbies -->
-      <section class="profile-hobbies">
-        <h3>Hobbies</h3>
-        <ul data-testid="test-user-hobbies">
-          <li>Coding</li>
-          <li>Gaming</li>
-          <li>Self-improvement</li>
-        </ul>
+      <!-- Interests Section -->
+      <section class="interests-section">
+        <div class="interests-column">
+          <div class="interest-category">
+            <h3><i class="fas fa-heart"></i> Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li><i class="fas fa-code"></i> Coding</li>
+              <li><i class="fas fa-gamepad"></i> Gaming</li>
+              <li><i class="fas fa-chart-line"></i> Self-improvement</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="interests-column">
+          <div class="interest-category">
+            <h3><i class="fas fa-thumbs-down"></i> Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li><i class="fas fa-times-circle"></i> Lack of Progress</li>
+              <li><i class="fas fa-exclamation-triangle"></i> Conflicts</li>
+              <li><i class="fas fa-cogs"></i> Complex SetUps</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <!-- Dislikes -->
-      <section class="profile-dislikes">
-        <h3>Dislikes</h3>
-        <ul data-testid="test-user-dislikes">
-          <li>Lack of Progress</li>
-          <li>Conflicts</li>
-          <li>Complex SetUps</li>
-        </ul>
-      </section>
-
-      <!-- Times -->
-      <button class="time-btn" data-testid="time-btn">Check Time</button>
+      <!-- Navigation Buttons -->
+      <div class="profile-navigation">
+        <a href="about.html" class="nav-btn about-btn">
+          <i class="fas fa-user"></i> About Me
+        </a>
+        <a href="contact.html" class="nav-btn contact-btn">
+          <i class="fas fa-envelope"></i> Get in Touch
+        </a>
+      </div>
 
     </article>
   </main>
 
-  <script src="script.js"></script>
+  <script src="../scripts/script.js"></script>
 </body>
 </html>

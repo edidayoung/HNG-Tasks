@@ -7,88 +7,152 @@
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVZ/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/contact.css" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="main-nav" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Edidayoung</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Profile</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main data-testid="test-contact-page">
-    <div class="container">
-      <header class="page-header">
-        <h1>Contact Me</h1>
-        <p>Get in touch - I'd love to hear from you!</p>
+    <div class="contact-container">
+      <header class="contact-header">
+        <h1>Get In Touch</h1>
+        <p class="contact-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
       </header>
 
-      <form id="contact-form" class="contact-form" novalidate>
-        <div class="form-group">
-          <label for="full-name">Full Name</label>
-          <input 
-            type="text" 
-            id="full-name" 
-            name="full-name" 
-            data-testid="test-contact-name"
-            required
-            aria-describedby="name-error"
-          />
-          <span id="name-error" data-testid="test-contact-error-name" class="error-message" aria-live="polite"></span>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h2>Let's Connect</h2>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>Ready for professional inquiries</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Response Time</h3>
+                <p>Usually within 24 hours</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Available for remote work worldwide</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-contact">
+            <h3>Or find me on</h3>
+            <div class="social-links">
+              <a href="https://x.com/edida_young?s=09" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/edidiong-ekaette" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/edidayoung" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            data-testid="test-contact-email"
-            required
-            aria-describedby="email-error"
-          />
-          <span id="email-error" data-testid="test-contact-error-email" class="error-message" aria-live="polite"></span>
-        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="full-name">Full Name *</label>
+            <input 
+              type="text" 
+              id="full-name" 
+              name="fullName" 
+              data-testid="test-contact-name"
+              required
+              aria-describedby="name-error"
+              placeholder="Enter your full name"
+            />
+            <span id="name-error" data-testid="test-contact-error-name" class="error-message" aria-live="polite"></span>
+          </div>
 
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input 
-            type="text" 
-            id="subject" 
-            name="subject" 
-            data-testid="test-contact-subject"
-            required
-            aria-describedby="subject-error"
-          />
-          <span id="subject-error" data-testid="test-contact-error-subject" class="error-message" aria-live="polite"></span>
-        </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              data-testid="test-contact-email"
+              required
+              aria-describedby="email-error"
+              placeholder="your.email@example.com"
+            />
+            <span id="email-error" data-testid="test-contact-error-email" class="error-message" aria-live="polite"></span>
+          </div>
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea 
-            id="message" 
-            name="message" 
-            rows="5"
-            data-testid="test-contact-message"
-            required
-            aria-describedby="message-error"
-          ></textarea>
-          <span id="message-error" data-testid="test-contact-error-message" class="error-message" aria-live="polite"></span>
-        </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              data-testid="test-contact-subject"
+              required
+              aria-describedby="subject-error"
+              placeholder="What's this about?"
+            />
+            <span id="subject-error" data-testid="test-contact-error-subject" class="error-message" aria-live="polite"></span>
+          </div>
 
-        <button type="submit" data-testid="test-contact-submit" class="submit-btn">
-          Send Message
-        </button>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              rows="6"
+              data-testid="test-contact-message"
+              required
+              aria-describedby="message-error"
+              placeholder="Tell me about your project or inquiry..."
+            ></textarea>
+            <span id="message-error" data-testid="test-contact-error-message" class="error-message" aria-live="polite"></span>
+          </div>
 
-        <div id="success-message" data-testid="test-contact-success" class="success-message" aria-live="polite"></div>
-      </form>
+          <button type="submit" data-testid="test-contact-submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+
+          <div id="success-message" data-testid="test-contact-success" class="success-message" aria-live="polite"></div>
+        </form>
+      </div>
 
       <nav class="page-navigation">
-        <a href="index.html" class="nav-link">Back to Profile</a>
-        <a href="about.html" class="nav-link">About Me</a>
+        <a href="about.html" class="nav-btn">
+          <i class="fas fa-arrow-left"></i> About Me
+        </a>
+        <a href="index.html" class="nav-btn">
+          <i class="fas fa-home"></i> Back to Profile
+        </a>
       </nav>
     </div>
   </main>
 
-  <script src="contact.js"></script>
+  <script src="../scripts/contact.js"></script>
 </body>
 </html>
