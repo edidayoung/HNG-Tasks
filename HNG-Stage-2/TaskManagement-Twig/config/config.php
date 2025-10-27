@@ -15,6 +15,10 @@ $twig = new \Twig\Environment($loader, [
 $twig->addGlobal('current_page', basename($_SERVER['PHP_SELF']));
 $twig->addGlobal('session', $_SESSION['user'] ?? null);
 
+// Add helper functions as Twig functions
+$twig->addFunction(new \Twig\TwigFunction('getStatusColor', 'getStatusColor'));
+$twig->addFunction(new \Twig\TwigFunction('getStatusLabel', 'getStatusLabel'));
+
 // Helper functions
 function getStoredData($filename, $default = []) {
     $filepath = "data/{$filename}.json";

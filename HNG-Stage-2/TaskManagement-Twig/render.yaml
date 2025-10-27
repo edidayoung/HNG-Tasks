@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: ticketlify
+    env: php
+    plan: free
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+      mkdir -p data
+    startCommand: php -S 0.0.0.0:$PORT
+    envVars:
+      - key: COMPOSER_ALLOW_SUPERUSER
+        value: 1
