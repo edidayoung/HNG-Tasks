@@ -10,7 +10,7 @@ A comprehensive ticket management web application built with React.js, Vite, and
 ### Installation & Setup
 
 
-Simply open the [Ticketlify](https://ticketlify.netlify.app/) in your preferred web browser.
+Simply open the [Ticketlify](https://ticketlify.netlify.app) in your preferred web browser.
 
 #### OR
 
