@@ -3,7 +3,7 @@
     <header class="bg-white shadow-sm sticky top-0 z-40">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
-          <h1 class="text-2xl font-bold text-indigo-600">TicketFlow</h1>
+          <h1 class="text-2xl font-bold text-indigo-600">Ticketlify</h1>
           <div class="flex items-center gap-4">
             <span class="text-gray-600 hidden sm:inline">Welcome, {{ session?.name }}</span>
             <button @click="$emit('logout')" class="flex items-center gap-2 text-gray-600 hover:text-red-600 transition">
@@ -70,7 +70,7 @@
 
     <footer class="bg-gray-800 text-white py-8 mt-20">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-gray-400">&copy; 2025 TicketFlow. All rights reserved.</p>
+        <p class="text-gray-400">&copy; 2025 Ticketlify. All rights reserved.</p>
       </div>
     </footer>
   </div>

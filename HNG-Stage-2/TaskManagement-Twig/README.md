@@ -1,50 +1,58 @@
 # Ticketlify - Vue.js Implementation
 
-A comprehensive ticket management web application built with Vue.js 3 (Composition API), Vite, and Tailwind CSS.
+A comprehensive ticket management web application built with Twig and PHP.
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 16+ and npm/yarn installed
+- PHP v8.14 and Composer installed
 
 ### Installation & Setup
 
 1. **Navigate to Vue project and open the Terminal type-**
    ```terminal
-   cd TaskManagement-Vue
+   cd TaskManagement-React
 
 2. **Run this command to Install dependencies-**
    ```terminal
-   npm install
+   composer install
 
 3. **Run the application with-**
    ```terminal
-   npm run dev
+   php -S localhost:8000
 
 4. **Access the Application-**
-- Open http://localhost:5173 in your browser.
+- Open http://localhost:8000 in your browser.
 
 ### Project Structure
 
 ```
-  src/
-  ├── App.vue                 # Main app component
-  ├── main.js                # Vue app entry point
-  ├── style.css              # Global styles
-  └── components/            # Vue components
-      ├── Toast.vue
-      ├── LandingPage.vue
-      ├── LoginPage.vue
-      ├── SignupPage.vue
-      ├── Dashboard.vue
-      └── TicketManagement.vue
+  TaskManagement-Twig/
+    ├── index.php             # Landing page
+    ├── login.php             # Login page
+    ├── signup.php            # Signup page
+    ├── dashboard.php         # Dashboard page
+    ├── tickets.php           # Ticket management
+    ├── logout.php            # Logout handler
+    ├── composer.json         # PHP dependencies
+    ├── config/               # Configuration files
+    │   ├── config.php
+    │   └── helpers.php
+    ├── templates/            # Twig template files
+    │   ├── base.html.twig
+    │   ├── landing.html.twig
+    │   ├── login.html.twig
+    │   ├── signup.html.twig
+    │   ├── dashboard.html.twig
+    │   └── tickets.html.twig
+    ├── data/                 # JSON data storage (auto-created)
+    └── assets/               # Static assets
+        └── style.css
 ```
 
 ## 🛠️ Built With:
-- Vue.js 3 (Composition API)
-- Vite
-- Tailwind CSS
-- Lucide Vue Icons
+- Twig
+- PHP
 - LocalStorage for data persistence
 
 ## 📱 Features / Requirements met (All Versions)
@@ -57,6 +65,7 @@ A comprehensive ticket management web application built with Vue.js 3 (Compositi
 - ✅ Responsive design
 - ✅ Toast notifications
 - ✅ Protected routes
+
 
 ## 📞 Support
 

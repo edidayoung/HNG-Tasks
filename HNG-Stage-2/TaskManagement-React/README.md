@@ -1,16 +1,65 @@
-# React + Vite
+# Ticketlify - Vue.js Implementation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive ticket management web application built with React.js, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Quick Start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+- Node.js 16+ and npm/yarn installed
 
-## React Compiler
+### Installation & Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Navigate to Vue project and open the Terminal type-**
+   ```terminal
+   cd TaskManagement-React
 
-## Expanding the ESLint configuration
+2. **Run this command to Install dependencies-**
+   ```terminal
+   npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Run the application with-**
+   ```terminal
+   npm run dev
+
+4. **Access the Application-**
+- Open http://localhost:5173 in your browser.
+
+### Project Structure
+
+```
+  src/
+  ├── App.jsx                 # Main app component
+  
+```
+
+## 🛠️ Built With:
+- React 18
+- Vite
+- Tailwind CSS
+- Lucide Vue Icons
+- LocalStorage for data persistence
+
+## 📱 Features / Requirements met (All Versions)
+
+- ✅ Landing page with hero section and wavy background
+- ✅ User authentication (login/signup)
+- ✅ Dashboard with ticket statistics
+- ✅ Full CRUD ticket management
+- ✅ Form validation and error handling
+- ✅ Responsive design
+- ✅ Toast notifications
+- ✅ Protected routes
+
+## 📞 Support
+
+If you encounter any issues running any of the implementations, please check the framework-specific README files for detailed troubleshooting steps. Thank You.
+
+## 🙏 Acknowledgments
+
+Special thanks to the [HNG Internship Team](https://hng.tech/internship) Team for this incredible learning opportunity and for pushing us to build professional, accessible web applications.
+
+Thank you for checking out my Stage 2 project! If you found this interesting, feel free to ⭐ the repository or connect with me on [LinkedIn](https://www.linkedin.com/in/edidiong-ekaette) — I'd love to hear your feedback! 😊
+
+------
+
+*Built with ❤️ as part of the HNG Internship Program.*

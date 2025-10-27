@@ -1,0 +1,81 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Dashboard - TicketFlow{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gray-50">
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <h1 class="text-2xl font-bold text-indigo-600">Ticketlify</h1>
+                <div class="flex items-center gap-4">
+                    <span class="text-gray-600 hidden sm:inline">Welcome, {{ session.name }}</span>
+                    <a href="logout.php" class="flex items-center gap-2 text-gray-600 hover:text-red-600 transition">
+                        <i class="lucide lucide-log-out"></i>
+                        <span class="hidden sm:inline">Logout</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-12">
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">Dashboard</h2>
+            <p class="text-xl text-gray-600">Overview of your ticket management system</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white rounded-xl shadow-md p-8 border-l-4 border-green-500">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-700">Open Tickets</h3>
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                        <i class="lucide lucide-alert-circle text-green-600 text-2xl"></i>
+                    </div>
+                </div>
+                <p class="text-4xl font-bold text-gray-800">{{ openTickets }}</p>
+                <p class="text-sm text-gray-500 mt-2">Awaiting attention</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-8 border-l-4 border-amber-500">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-700">In Progress</h3>
+                    <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                        <i class="lucide lucide-edit-2 text-amber-600 text-2xl"></i>
+                    </div>
+                </div>
+                <p class="text-4xl font-bold text-gray-800">{{ inProgressTickets }}</p>
+                <p class="text-sm text-gray-500 mt-2">Being worked on</p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-8 border-l-4 border-gray-500">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-semibold text-gray-700">Closed</h3>
+                    <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+                        <i class="lucide lucide-check-circle text-gray-600 text-2xl"></i>
+                    </div>
+                </div>
+                <p class="text-4xl font-bold text-gray-800">{{ closedTickets }}</p>
+                <p class="text-sm text-gray-500 mt-2">Resolved tickets</p>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl"></div>
+            <div class="relative z-10">
+                <h3 class="text-3xl font-bold mb-4">Manage Your Tickets</h3>
+                <p class="text-indigo-100 mb-6 text-lg">Create, view, edit, and delete tickets with our comprehensive ticket management system.</p>
+                <a href="tickets.php" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Go to Ticket Management
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-20">
+        <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2025 Ticketlify. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+{% endblock %}

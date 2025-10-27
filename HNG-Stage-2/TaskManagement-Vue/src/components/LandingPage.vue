@@ -3,7 +3,7 @@
     <header class="bg-white shadow-sm sticky top-0 z-40">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
-          <h1 class="text-2xl font-bold text-indigo-600">TicketFlow</h1>
+          <h1 class="text-2xl font-bold text-indigo-600">Ticketlify</h1>
           <nav class="hidden md:flex gap-6">
             <button @click="$emit('navigate', 'login')" class="text-gray-600 hover:text-indigo-600 transition">Login</button>
             <button @click="$emit('navigate', 'signup')" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">Get Started</button>
@@ -44,7 +44,7 @@
 
     <section class="py-20 bg-gray-50">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 class="text-3xl sm:text-4xl font-bold text-center mb-4">Why Choose TicketFlow?</h3>
+        <h3 class="text-3xl sm:text-4xl font-bold text-center mb-4">Why Choose Ticketlify?</h3>
         <p class="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">Everything you need to manage tickets effectively in one powerful platform.</p>
         
         <div class="grid md:grid-cols-3 gap-8">
@@ -79,14 +79,14 @@
       <div class="absolute top-0 left-0 w-96 h-96 bg-indigo-200 opacity-20 rounded-full blur-3xl"></div>
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h3 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Get Started?</h3>
-        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Join thousands of teams already using TicketFlow to manage their tickets efficiently.</p>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Join thousands of teams already using Ticketlify to manage their tickets efficiently.</p>
         <button @click="$emit('navigate', 'signup')" class="bg-indigo-600 text-white px-10 py-4 rounded-lg font-semibold hover:bg-indigo-700 transition text-lg">Create Your Account</button>
       </div>
     </section>
 
     <footer class="bg-gray-800 text-white py-8">
       <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-gray-400">&copy; 2025 TicketFlow. All rights reserved.</p>
+        <p class="text-gray-400">&copy; 2025 Ticketlify. All rights reserved.</p>
       </div>
     </footer>
   </div>

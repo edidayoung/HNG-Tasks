@@ -169,7 +169,7 @@ const LandingPage = ({ onNavigate }) => {
       <header className="bg-white shadow-sm sticky top-0 z-40">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <h1 className="text-2xl font-bold text-indigo-600">TicketFlow</h1>
+            <h1 className="text-2xl font-bold text-indigo-600">Ticketlify</h1>
             <nav className="hidden md:flex gap-6">
               <button onClick={() => onNavigate('login')} className="text-gray-600 hover:text-indigo-600 transition">Login</button>
               <button onClick={() => onNavigate('signup')} className="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">Get Started</button>
@@ -211,7 +211,7 @@ const LandingPage = ({ onNavigate }) => {
 
       <section className="py-20 bg-gray-50">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <h3 className="text-3xl sm:text-4xl font-bold text-center mb-4">Why Choose TicketFlow?</h3>
+          <h3 className="text-3xl sm:text-4xl font-bold text-center mb-4">Why Choose Ticketlify?</h3>
           <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">Everything you need to manage tickets effectively in one powerful platform.</p>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -253,7 +253,7 @@ const LandingPage = ({ onNavigate }) => {
 
       <footer className="bg-gray-800 text-white py-8">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-400">&copy; 2025 TicketFlow. All rights reserved.</p>
+          <p className="text-gray-400">&copy; 2025 Ticketlify. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -387,7 +387,7 @@ const SignupPage = ({ onSignup, onNavigate }) => {
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-2">Create Account</h2>
-            <p className="text-gray-600">Sign up to get started with TicketFlow</p>
+            <p className="text-gray-600">Sign up to get started with Ticketlify</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -475,7 +475,7 @@ const Dashboard = ({ tickets, session, onNavigate, onLogout }) => {
       <header className="bg-white shadow-sm sticky top-0 z-40">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <h1 className="text-2xl font-bold text-indigo-600">TicketFlow</h1>
+            <h1 className="text-2xl font-bold text-indigo-600">Ticketlify</h1>
             <div className="flex items-center gap-4">
               <span className="text-gray-600 hidden sm:inline">Welcome, {session?.name}</span>
               <button onClick={onLogout} className="flex items-center gap-2 text-gray-600 hover:text-red-600 transition">
@@ -542,7 +542,7 @@ const Dashboard = ({ tickets, session, onNavigate, onLogout }) => {
 
       <footer className="bg-gray-800 text-white py-8 mt-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-400">&copy; 2025 TicketFlow. All rights reserved.</p>
+          <p className="text-gray-400">&copy; 2025 Ticketlify. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -629,7 +629,7 @@ const TicketManagement = ({ tickets, onAdd, onUpdate, onDelete, onNavigate, onLo
       <header className="bg-white shadow-sm sticky top-0 z-40">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <h1 className="text-2xl font-bold text-indigo-600">TicketFlow</h1>
+            <h1 className="text-2xl font-bold text-indigo-600">Ticketlify</h1>
             <div className="flex items-center gap-4">
               <button onClick={() => onNavigate('dashboard')} className="text-gray-600 hover:text-indigo-600 transition hidden sm:inline">
                 Dashboard
@@ -813,7 +813,7 @@ const TicketManagement = ({ tickets, onAdd, onUpdate, onDelete, onNavigate, onLo
 
       <footer className="bg-gray-800 text-white py-8 mt-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-400">&copy; 2025 TicketFlow. All rights reserved.</p>
+          <p className="text-gray-400">&copy; 2025 Ticketlify. All rights reserved.</p>
         </div>
       </footer>
     </div>
