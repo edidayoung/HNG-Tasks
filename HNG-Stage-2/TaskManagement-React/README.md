@@ -14,7 +14,7 @@ Simply open the [Ticketlify](https://ticketlify.netlify.app) in your preferred w
 
 #### OR
 
-1. **Navigate to Vue project and open the Terminal type-**
+1. **Navigate to React project using terminal-**
    ```terminal
    cd TaskManagement-React
 

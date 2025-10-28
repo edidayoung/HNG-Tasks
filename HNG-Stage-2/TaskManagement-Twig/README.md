@@ -13,7 +13,7 @@ Simply open the [Ticketlify](https://twig-hng-stage2.wuaze.com/index.php) in you
 
 #### OR
 
-1. **Navigate to Vue project and open the Terminal type-**
+1. **Navigate to Twig project using terminal-**
    ```terminal
    cd TaskManagement-React
 
