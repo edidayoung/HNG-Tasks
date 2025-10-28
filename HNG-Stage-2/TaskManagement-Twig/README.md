@@ -9,7 +9,7 @@ A comprehensive ticket management web application built with Twig and PHP.
 
 ### Installation & Setup
 
-Simply open the [Ticketlify](https://twig-hng-stage2.wuaze.com/index.php) in your preferred web browser.
+Simply open [Ticketlify](https://twig-hng-stage2.wuaze.com/index.php) in your preferred web browser.
 
 #### OR
 

@@ -9,7 +9,7 @@ A comprehensive ticket management web application built with Vue.js 3 (Compositi
 
 ### Installation & Setup
 
-Simply open the [Ticketlify](https://ticketlify.netlify.app/) in your preferred web browser.
+Simply open [Ticketlify](https://ticketlify.netlify.app/) in your preferred web browser.
 
 #### OR
 
