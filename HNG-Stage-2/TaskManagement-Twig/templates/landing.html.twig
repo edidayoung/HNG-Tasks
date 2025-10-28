@@ -13,7 +13,7 @@
                     <a href="signup.php" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">Get Started</a>
                 </nav>
                 <button class="md:hidden" onclick="toggleMobileMenu()">
-                    <i class="lucide lucide-menu" id="menu-icon"></i>
+                    <i data-lucide="menu" id="menu-icon"></i>
                 </button>
             </div>
             <nav class="md:hidden pb-4 hidden flex-col gap-3" id="mobile-menu">
@@ -47,13 +47,13 @@
 
     <section class="py-20 bg-gray-50">
         <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 class="text-3xl sm:text-4xl font-bold text-center mb-4">Why Choose TicketFlow?</h3>
+            <h3 class="text-3xl sm:text-4xl font-bold text-center mb-4">Why Choose Ticketlify?</h3>
             <p class="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">Everything you need to manage tickets effectively in one powerful platform.</p>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="lucide lucide-check-circle text-green-600 text-3xl"></i>
+                        <i data-lucide="check-circle" class="text-green-600 w-8 h-8"></i>
                     </div>
                     <h4 class="text-2xl font-semibold mb-4">Easy Tracking</h4>
                     <p class="text-gray-600">Keep track of all your tickets in one centralized dashboard with real-time status updates.</p>
@@ -61,7 +61,7 @@
                 
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="lucide lucide-edit-2 text-blue-600 text-3xl"></i>
+                        <i data-lucide="edit-2" class="text-blue-600 w-8 h-8"></i>
                     </div>
                     <h4 class="text-2xl font-semibold mb-4">Quick Updates</h4>
                     <p class="text-gray-600">Update ticket status and details instantly with our intuitive interface.</p>
@@ -69,7 +69,7 @@
                 
                 <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition">
                     <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                        <i class="lucide lucide-alert-circle text-purple-600 text-3xl"></i>
+                        <i data-lucide="alert-circle" class="text-purple-600 w-8 h-8"></i>
                     </div>
                     <h4 class="text-2xl font-semibold mb-4">Smart Notifications</h4>
                     <p class="text-gray-600">Stay informed with instant notifications and never miss important updates.</p>
@@ -82,7 +82,7 @@
         <div class="absolute top-0 left-0 w-96 h-96 bg-indigo-200 opacity-20 rounded-full blur-3xl"></div>
         <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h3 class="text-3xl sm:text-4xl font-bold mb-6">Ready to Get Started?</h3>
-            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Join thousands of teams already using TicketFlow to manage their tickets efficiently.</p>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Join thousands of teams already using Ticketlify to manage their tickets efficiently.</p>
             <a href="signup.php" class="bg-indigo-600 text-white px-10 py-4 rounded-lg font-semibold hover:bg-indigo-700 transition text-lg">Create Your Account</a>
         </div>
     </section>
@@ -100,8 +100,14 @@ function toggleMobileMenu() {
     const icon = document.getElementById('menu-icon');
     menu.classList.toggle('hidden');
     menu.classList.toggle('flex');
-    icon.classList.toggle('lucide-menu');
-    icon.classList.toggle('lucide-x');
+    
+    // Toggle between menu and x icons
+    if (icon.getAttribute('data-lucide') === 'menu') {
+        icon.setAttribute('data-lucide', 'x');
+    } else {
+        icon.setAttribute('data-lucide', 'menu');
+    }
+    lucide.createIcons(); // Re-initialize icons after change
 }
 </script>
 {% endblock %}

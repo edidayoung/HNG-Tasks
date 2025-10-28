@@ -11,7 +11,7 @@
                 <div class="flex items-center gap-4">
                     <span class="text-gray-600 hidden sm:inline">Welcome, {{ session.name }}</span>
                     <a href="logout.php" class="flex items-center gap-2 text-gray-600 hover:text-red-600 transition">
-                        <i class="lucide lucide-log-out"></i>
+                        <i data-lucide="log-out"></i>
                         <span class="hidden sm:inline">Logout</span>
                     </a>
                 </div>
@@ -30,7 +30,7 @@
                 <div class="flex items-center justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-700">Open Tickets</h3>
                     <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                        <i class="lucide lucide-alert-circle text-green-600 text-2xl"></i>
+                        <i data-lucide="alert-circle" class="text-green-600 w-6 h-6"></i>
                     </div>
                 </div>
                 <p class="text-4xl font-bold text-gray-800">{{ openTickets }}</p>
@@ -41,7 +41,7 @@
                 <div class="flex items-center justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-700">In Progress</h3>
                     <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
-                        <i class="lucide lucide-edit-2 text-amber-600 text-2xl"></i>
+                        <i data-lucide="edit-2" class="text-amber-600 w-6 h-6"></i>
                     </div>
                 </div>
                 <p class="text-4xl font-bold text-gray-800">{{ inProgressTickets }}</p>
@@ -52,7 +52,7 @@
                 <div class="flex items-center justify-between mb-4">
                     <h3 class="text-lg font-semibold text-gray-700">Closed</h3>
                     <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                        <i class="lucide lucide-check-circle text-gray-600 text-2xl"></i>
+                        <i data-lucide="check-circle" class="text-gray-600 w-6 h-6"></i>
                     </div>
                 </div>
                 <p class="text-4xl font-bold text-gray-800">{{ closedTickets }}</p>
